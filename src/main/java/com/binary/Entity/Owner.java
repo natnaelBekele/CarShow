@@ -11,7 +11,8 @@ public class Owner {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long ownerId;
     private String firstName,lastname;
-    @OneToMany(mappedBy = "owner",cascade = CascadeType.ALL)
+   // @OneToMany(mappedBy = "owner",cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
     private List<Car> cars;
 
     public Owner() {
@@ -26,12 +27,4 @@ public class Owner {
         this.firstName = firstName;
         this.lastname = lastname;
     }
-    public Long getOwnerId() {
-        return ownerId;
-    }
-    public void setOwnerId(Long ownerId) {
-        this.ownerId = ownerId;
-    }
-
-
 }

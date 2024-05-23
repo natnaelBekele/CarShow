@@ -23,10 +23,11 @@ public class CarShowApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
-		Car car1 = new Car(60000, 2024, "XYZ", "Red", "Mustang", "Ford");
+
 		Owner owner1 = new Owner("Nathy", "Ford");
 		Owner owner2 = new Owner("Nathy", "Ford");
 		Owner owner3 = new Owner("Nathy", "Ford");
+		Car car1 = new Car(60000, 2024, "XYZ", "Red", "Mustang", "Ford",owner1);
 
 		ownerRepository.save(owner1);
 		ownerRepository.save(owner2);
