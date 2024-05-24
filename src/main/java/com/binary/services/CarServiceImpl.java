@@ -26,7 +26,7 @@ public class CarServiceImpl implements CarService {
         if (car == null) {
             return null;
         }
-        if (car.getBrand() != null && car.getOwner().getOwnerId() == null) {
+        if (car.getOwner() != null && car.getOwner().getOwnerId() == null) {
             ownerRepository.save(car.getOwner());
         }
         Car savedCar = carRepository.save(car);
