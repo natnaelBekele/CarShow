@@ -1,7 +1,7 @@
 package com.binary.controller;
 
 import com.binary.Entity.Car;
-import com.binary.services.CarService;
+import com.binary.service.CarService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

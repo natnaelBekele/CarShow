@@ -1,4 +1,4 @@
-package com.binary.services;
+package com.binary.service;
 
 import com.binary.Entity.Car;
 import com.binary.repository.CarRepository;
